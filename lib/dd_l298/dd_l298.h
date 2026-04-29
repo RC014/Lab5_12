@@ -2,6 +2,9 @@
 #define DD_L298_H_
 
 #include <stdint.h>
+#include <Arduino.h>
+
+#include "../../include/config.h"
 
 typedef enum {
   DD_L298_DIR_STOP = 0,

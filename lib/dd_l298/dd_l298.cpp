@@ -1,9 +1,5 @@
 #include "dd_l298.h"
 
-#include <Arduino.h>
-
-#include "../../include/config.h"
-
 void ddL298Init(void)
 {
   pinMode(L298_ENA_PIN, OUTPUT);

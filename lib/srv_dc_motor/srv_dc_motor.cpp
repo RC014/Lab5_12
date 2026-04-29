@@ -1,10 +1,5 @@
 #include "srv_dc_motor.h"
 
-#include <Arduino.h>
-
-#include "../../include/config.h"
-#include "../dd_l298/dd_l298.h"
-
 static srv_dc_motor_state_t s_state = { 0 };
 
 static uint8_t percentToDuty(int8_t percent)

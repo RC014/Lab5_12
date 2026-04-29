@@ -2,6 +2,10 @@
 #define SRV_DC_MOTOR_H_
 
 #include <stdint.h>
+#include <Arduino.h>
+
+#include "../../include/config.h"
+#include "../dd_l298/dd_l298.h"
 
 typedef struct {
   int8_t power_percent;  // -100..100

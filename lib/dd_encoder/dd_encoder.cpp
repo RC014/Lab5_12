@@ -1,9 +1,5 @@
 #include "dd_encoder.h"
 
-#include <Arduino.h>
-
-#include "../../include/config.h"
-
 static volatile long s_deltaTicks = 0L;
 static volatile long s_positionTicks = 0L;
 

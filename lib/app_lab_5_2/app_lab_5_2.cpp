@@ -1,12 +1,5 @@
 #include "app_lab_5_2.h"
 
-#include <stdio.h>
-
-#include "../../include/config.h"
-#include "../dd_serial_stdio/dd_serial_stdio.h"
-#include "../dd_encoder/dd_encoder.h"
-#include "../srv_dc_motor/srv_dc_motor.h"
-
 typedef enum
 {
   CTRL_STATE_OFF = 0,

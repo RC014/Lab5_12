@@ -1,13 +1,5 @@
 #include "app_lab_5_1.h"
 
-#include <stdio.h>
-
-#include "../../include/config.h"
-#include "../dd_serial_stdio/dd_serial_stdio.h"
-#include "../dd_encoder/dd_encoder.h"
-#include "../srv_pid/srv_pid.h"
-#include "../srv_dc_motor/srv_dc_motor.h"
-
 static float s_setPointRpm = 0.0f;
 static float s_measuredRpm = 0.0f;
 static float s_pidOutput = 0.0f;

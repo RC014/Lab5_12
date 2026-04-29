@@ -1,9 +1,5 @@
 #include "srv_pid.h"
 
-#include <Arduino.h>
-
-#include "../../include/config.h"
-
 typedef struct
 {
   float kp;
