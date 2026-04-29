@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "author": "Ștefan Mândrescu",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": -124.6, "left": 201.6, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": -157.2, "left": 359, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -62.4,
+      "left": 316.25,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "relay1:GND", "mega:GND.2", "black", [ "h0" ] ],
+    [ "relay1:IN", "mega:7", "green", [ "h0" ] ],
+    [ "relay1:COM", "r1:1", "black", [ "h0" ] ],
+    [ "relay1:VCC", "mega:5V", "red", [ "h0" ] ],
+    [ "r1:2", "mega:GND.2", "black", [ "h0" ] ],
+    [ "led1:A", "mega:5V", "green", [ "v316.8", "h-220.8" ] ],
+    [ "led1:C", "relay1:NO", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
